@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
   $(document).on("scroll", function() {
-  	if ($(document).scrollTop() > 100) {
+  	if ($(document).scrollTop() > 50) {
   	  $("header").addClass("shrink");
       $("#header-logo").addClass("shrink-logo");
       $("nav#navigation").addClass("right-adjust");
