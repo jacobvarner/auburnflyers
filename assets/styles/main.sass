@@ -313,3 +313,100 @@ footer
     a, a:hover, a:active, a:visited
       color: $blue
       text-decoration: none
+
+.heading
+  font-family: "Roboto", sans-serif
+  font-weight: bold
+  color: $blue
+  font-size: 36px
+  text-align: center
+  margin: 40px 20px
+
+  @media only screen and (max-width: 400px)
+    font-size: 28px
+
+.members-container
+  display: block
+  width: 1050px
+  margin: 0 auto 40px
+  font-size: 0
+  overflow: contain
+
+  @media only screen and (max-width: 1080px)
+    width: 840px
+
+  @media only screen and (max-width: 870px)
+    width: 630px
+
+  @media only screen and (max-width: 660px)
+    width: 420px
+
+  @media only screen and (max-width: 450px)
+    width: 320px
+
+  .rider
+    display: inline-block
+    width: 200px
+    margin: 5px
+
+    @media only screen and (max-width: 450px)
+      width: 150px
+
+    img
+      width: 200px
+
+      @media only screen and (max-width: 450px)
+        width: 150px
+
+  .overlay
+    position: relative
+
+    p
+      display: block
+      position: absolute
+      left: 10px
+      bottom: 10px
+      font-family: "Roboto", sans-serif
+      font-size: 24px
+      color: white
+      margin: 0
+      font-weight: normal
+      line-height: 24px
+
+      @media only screen and (max-width: 450px)
+        font-size: 20px
+        line-height: 20px
+
+      span
+        font-weight: bold
+
+  .overlay:before
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(12, 35, 64, 0.50)
+    -moz-transition: background .3s linear
+    -webkit-transition: background .3s linear
+    -o-transition: background .3s linear
+    transition: background .3s linear
+
+
+
+.not-pictured
+  width: 600px
+  margin: 0px auto 40px
+  color: $blue
+  font-family: "Roboto", sans-serif
+  font-size: 18px
+
+  @media only screen and (max-width: 640px)
+    width: auto
+    margin: 0px 20px 40px
+
+
+  span
+    font-weight: bold

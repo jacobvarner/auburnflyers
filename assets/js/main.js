@@ -26,4 +26,10 @@ jQuery(document).ready(function ($) {
       $("#header-logo").css('opacity','1');
     }
   });
+
+  $(".rider").hover(
+    function() {
+      $(this).toggleClass('overlay')
+    }
+  )
 });
