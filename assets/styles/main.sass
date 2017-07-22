@@ -410,3 +410,91 @@ footer
 
   span
     font-weight: bold
+
+.season
+  display: block
+  width: 900px
+  margin: 0 auto
+
+  .season-heading
+    display: block
+    position: relative
+    width: 100%
+    height: 60px
+    background: $blue
+
+    .season-title
+      display: inline-block
+      color: white
+      font-family: "Roboto", sans-serif
+      font-size: 32px
+      line-height: 60px
+      margin: 0 20px
+      padding: 0
+
+    .season-result
+      display: inline-block
+      position: absolute
+      right: 20px
+      color: $orange
+      font-family: "Roboto", sans-serif
+      font-size: 24px
+      line-height: 60px
+      margin: 0
+      padding: 0
+
+  .races-container
+    height: auto
+    border: 3px solid $blue
+    overflow: auto
+
+    .race
+      dispay: block
+      margin: 10px
+
+      .race-heading
+        display: block
+        position: relative
+        width: 100%
+        height: 40px
+        background: $orange
+
+        .dropdown-toggle
+          color: white
+          font-size: 28px
+          line-height: 40px
+          position: absolute
+          left: 10px
+
+        .race-title
+          font-family: "Roboto", sans-serif
+          font-size: 18px
+          line-height: 30px
+          position: absolute
+          left: 45px
+          top: 5px
+          margin: 0
+          padding: 0
+          color: white
+
+      .results-container
+        height: auto
+        border: 3px solid $orange
+        overflow: auto
+        display: none
+
+        .category
+          font-family: "Roboto", sans-serif
+          color: $blue
+          margin: 10px
+          font-size: 18px
+
+        .event
+          font-family: "Open Sans", sans-serif
+          color: black
+          font-size: 14px
+          margin: 10px
+          line-height: 18px
+
+          span
+            font-weight: bold

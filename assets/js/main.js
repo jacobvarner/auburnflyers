@@ -27,6 +27,19 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  $(".dropdown-toggle").click(
+    function() {
+      if ($(this).parent().nextAll(".results-container").css("display") === "none") {
+        $(this).parent().nextAll(".results-container").css("display","block");
+        $(this).removeClass("fa-bars");
+        $(this).addClass("fa-close");
+      } else {
+        $(this).parent().nextAll(".results-container").css("display","none");
+        $(this).removeClass("fa-close");
+        $(this).addClass("fa-bars");
+      }
+  });
+
   $(".rider").hover(
     function() {
       $(this).toggleClass('overlay')
