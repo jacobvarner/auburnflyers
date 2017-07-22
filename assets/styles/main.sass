@@ -503,11 +503,15 @@ footer
             font-size: 14px
 
       .results-container
-        height: auto
+        max-height: 0
         border: 3px solid $orange
         border-top: none
         overflow: auto
-        display: none
+        display: block
+        margin: -3px 0 0
+        /* animation magic */
+        -webkit-transition: max-height 0.3s ease-in-out
+        -moz-transition: max-height 0.3s ease-in-out
 
         .category
           font-family: "Roboto", sans-serif
@@ -524,3 +528,6 @@ footer
 
           span
             font-weight: bold
+
+      .results-container::-webkit-scrollbar
+        display: none
