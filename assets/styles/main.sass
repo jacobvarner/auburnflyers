@@ -189,7 +189,7 @@ nav#mobile-navigation
   display: none
 
 .spacer
-  height: 3000px
+  height: 500px
   display: block
 
 .header-image
@@ -322,8 +322,11 @@ footer
   text-align: center
   margin: 40px 20px
 
-  @media only screen and (max-width: 400px)
+  @media only screen and (max-width: 600px)
     font-size: 28px
+
+  @media only screen and (max-width: 400px)
+    font-size: 24px
 
 .members-container
   display: block
@@ -607,3 +610,49 @@ footer
 
         a,a:active,a:hover,a:visited
           color: black
+
+.contact-statement
+  display: block
+  width: 640px
+  margin: 0 auto
+  font-size: 16px
+  color: black
+  font-family: "Open Sans", sans-serif
+  line-height: 22px
+
+  @media only screen and (max-width: 660px)
+    width: auto
+    margin: 0 20px
+
+  a,a:hover,a:visited,a:active
+    text-decoration: none
+    color: $orange
+
+.social-tagline
+  font-family: "Roboto", sans-serif
+  font-size: 24px
+  color: $blue
+  margin: 20px
+  text-align: center
+
+.social-link
+  display: block
+  width: 200px
+  margin: 0 auto
+  text-decoration: none
+  color: $orange
+  font-family: "Roboto", sans-serif
+  height: 40px
+  text-align: center
+
+  p
+    display: inline-block
+    font-size: 18px
+    line-height: 40px
+    margin: 0
+    vertical-align: top
+
+  i
+    display: inline-block
+    font-size: 36px
+    line-height: 40px
